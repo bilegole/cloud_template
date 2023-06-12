@@ -1,9 +1,15 @@
 server:
   port: 8003
+  servlet:
+    context-path: /b-workflow
 
 spring:
   application:
     name: b-workflow
+  data:
+    redis:
+      host: light.bilegole.com
+      port: 6379
 
 eureka:
   client:

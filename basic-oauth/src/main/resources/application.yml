@@ -6,12 +6,10 @@ server:
 spring:
   application:
     name: b-oauth
-
   data:
     redis:
       host: light.bilegole.com
       port: 6379
-
 
 eureka:
   client:
