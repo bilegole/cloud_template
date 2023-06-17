@@ -20,10 +20,10 @@ spring:
           uri: lb://app-mgr # 目标服务地址
           predicates: # 断言（路由条件）
             - Path=/mgr/**
-        - id: app-demo01 # 路由ID，保持唯一
-          uri: lb://app-demo01 # 目标服务地址
+        - id: app-eve # 路由ID，保持唯一
+          uri: lb://app-eve # 目标服务地址
           predicates: # 断言（路由条件）
-            - Path=/app-demo01/**
+            - Path=/eve/**
 
 eureka:
   client:
