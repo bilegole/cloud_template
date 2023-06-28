@@ -7,10 +7,10 @@
         <groupId>com.bilegole</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>app-demo01</artifactId>
+    <artifactId>app-eve</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>app-demo01</name>
-    <description>app-demo01</description>
+    <name>app-eve</name>
+    <description>app-eve</description>
     <properties>
         <java.version>17</java.version>
     </properties>

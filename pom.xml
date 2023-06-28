@@ -32,7 +32,7 @@
         <module>basic-oauth</module>
 
         <module>app-mgr</module>
-        <module>app-demo01</module>
+        <module>app-eve</module>
     </modules>
 
 
