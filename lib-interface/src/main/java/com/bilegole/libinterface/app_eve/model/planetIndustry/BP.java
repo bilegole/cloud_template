@@ -1,10 +1,9 @@
 package com.bilegole.libinterface.app_eve.model.planetIndustry;
 
 import com.bilegole.libinterface.app_eve.model.Blueprint;
-import com.bilegole.libinterface.app_eve.model.Items;
+import com.bilegole.libinterface.app_eve.model.BPItems;
 import jakarta.persistence.*;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -18,11 +17,11 @@ public class BP implements Blueprint {
 
 	Integer uid;
 
-	@OneToMany
-	List<Items> inputs;
+	@Transient
+	List<BPItems> inputs;
 
-	@OneToMany
-	List<Items> output;
+	@Transient
+	List<BPItems> output;
 
 	/**
 	 * 蓝图时间消耗(单位，秒)
@@ -36,13 +35,13 @@ public class BP implements Blueprint {
 	FactoryLevel factoryLevel;
 
 	@Override
-	public List<Items> getInputs() {
+	public List<BPItems> getInputs() {
 		return inputs;
 	}
 
 	@Override
-	public List<Items> getOutputs() {
-		return Collections.singletonList(output);
+	public List<BPItems> getOutputs() {
+		return output;
 	}
 
 	@Override

@@ -6,9 +6,9 @@ import java.util.List;
  * 蓝图
  */
 public interface Blueprint {
-	List<Items> getInputs();
+	List<BPItems> getInputs();
 
-	List<Items> getOutputs();
+	List<BPItems> getOutputs();
 
 	Integer getTimeCost();
 
