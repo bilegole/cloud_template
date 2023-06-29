@@ -1,4 +1,4 @@
-package com.bilegole.libinterface.app_eve.model.planetIndustry;
+package com.bilegole.eve.model.entity.Industry.PlanetIndustry;
 
 public enum FactoryLevel {
 	/**

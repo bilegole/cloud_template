@@ -1,4 +1,4 @@
-package com.bilegole.appdemo01;
+package com.bilegole.eve;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

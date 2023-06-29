@@ -11,6 +11,10 @@ spring:
     url: jdbc:mysql://10.0.0.1:3306/eve
     username: yuang
     password: 111111q.
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
 
 eureka:
   client:

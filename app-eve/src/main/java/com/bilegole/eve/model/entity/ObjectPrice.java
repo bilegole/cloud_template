@@ -1,6 +1,6 @@
-package com.bilegole.appdemo01.model.entity;
+package com.bilegole.eve.model.entity;
 
-import com.bilegole.appdemo01.model.Enum.PriceType;
+import com.bilegole.eve.model.Enum.PriceType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +18,6 @@ public class ObjectPrice extends Record{
 	@Column(name = "price_type")
 	PriceType priceType;
 
-	@Column(name = "price", precision = 15, scale = 2)
+	@Column(name = "price", precision = 15)
 	Double price;
 }

@@ -1,4 +1,6 @@
-package com.bilegole.libinterface.app_eve.model;
+package com.bilegole.eve.model.entity;
+
+import com.bilegole.eve.model.entity.Industry.BPItems;
 
 import java.util.List;
 

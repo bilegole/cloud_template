@@ -1,15 +1,13 @@
-package com.bilegole.libinterface.app_eve.model.planetIndustry;
+package com.bilegole.eve.model.entity.Industry;
 
-import com.bilegole.libinterface.app_eve.model.Blueprint;
-import com.bilegole.libinterface.app_eve.model.BPItems;
+import com.bilegole.eve.model.Enum.BluePrintType;
+import com.bilegole.eve.model.entity.Blueprint;
+import com.bilegole.eve.model.entity.Industry.PlanetIndustry.FactoryLevel;
 import jakarta.persistence.*;
 
 import java.util.List;
 
-/**
- * 行星加工配方
- */
-@Entity
+@MappedSuperclass
 @Table(name = "blueprint")
 public class BP implements Blueprint {
 	@Id
@@ -28,11 +26,7 @@ public class BP implements Blueprint {
 	 */
 	Integer timeCost;
 
-	/**
-	 * 工厂类型
-	 */
-	@Enumerated(EnumType.STRING)
-	FactoryLevel factoryLevel;
+	BluePrintType bluePrintType;
 
 	@Override
 	public List<BPItems> getInputs() {

@@ -1,4 +1,4 @@
-package com.bilegole.appdemo01.model.Enum;
+package com.bilegole.eve.model.Enum;
 
 public enum BluePrintType {
 	/**

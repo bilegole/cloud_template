@@ -1,8 +1,8 @@
-package com.bilegole.appdemo01;
+package com.bilegole.eve;
 
-import com.bilegole.appdemo01.dao.repository.ObjectPriceRepository;
-import com.bilegole.appdemo01.model.Enum.PriceType;
-import com.bilegole.appdemo01.model.entity.ObjectPrice;
+import com.bilegole.eve.dao.repository.ObjectPriceRepository;
+import com.bilegole.eve.model.Enum.PriceType;
+import com.bilegole.eve.model.entity.ObjectPrice;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -6,6 +6,11 @@ server:
 spring:
   application:
     name: b-oauth
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.0.0.1:3306/eve
+    username: yuang
+    password: 111111q.
   data:
     redis:
       host: light.bilegole.com

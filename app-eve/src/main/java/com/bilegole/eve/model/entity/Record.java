@@ -1,6 +1,5 @@
-package com.bilegole.appdemo01.model.entity;
+package com.bilegole.eve.model.entity;
 
-import com.bilegole.appdemo01.model.Enum.PriceType;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

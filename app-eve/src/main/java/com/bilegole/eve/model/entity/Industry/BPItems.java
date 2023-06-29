@@ -1,4 +1,4 @@
-package com.bilegole.libinterface.app_eve.model;
+package com.bilegole.eve.model.entity.Industry;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
