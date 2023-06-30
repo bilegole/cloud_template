@@ -13,8 +13,10 @@ spring:
     password: 111111q.
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
+    properties:
+      default_batch_fetch_size: 20
 
 eureka:
   client:

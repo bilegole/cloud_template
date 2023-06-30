@@ -4,8 +4,10 @@ import com.bilegole.eve.model.entity.Industry.BP;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.Table;
 
-@Entity(name = "bp_planet_industry")
+@Entity
+@Table(name = "bp_planet_industry")
 public class PlanetBP extends BP {
     /**
      * 工厂类型

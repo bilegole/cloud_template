@@ -1,4 +1,4 @@
-package com.bilegole.eve.model.Enum;
+package com.bilegole.eve.model.entity.Industry;
 
 public enum BluePrintType {
 	/**

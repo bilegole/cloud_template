@@ -1,41 +1,48 @@
 package com.bilegole.eve.model.entity.Industry;
 
-import com.bilegole.eve.model.Enum.BluePrintType;
 import com.bilegole.eve.model.entity.Blueprint;
-import com.bilegole.eve.model.entity.Industry.PlanetIndustry.FactoryLevel;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
-@MappedSuperclass
+@Setter
+@Getter
+@Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 @Table(name = "blueprint")
 public class BP implements Blueprint {
 	@Id
 	Integer id;
 
+	/**
+	 * 蓝图id（ccp规定）
+	 */
 	Integer uid;
 
-	@Transient
-	List<BPItems> inputs;
+	@OneToMany(mappedBy = "bp", fetch = FetchType.EAGER)
+	List<BPItemInput> inputs;
 
-	@Transient
-	List<BPItems> output;
+//	@OneToMany(mappedBy = "bp", fetch = FetchType.EAGER)
+//	List<BPItemOutput> output;
 
 	/**
 	 * 蓝图时间消耗(单位，秒)
 	 */
 	Integer timeCost;
 
+	@Enumerated(EnumType.STRING)
 	BluePrintType bluePrintType;
 
 	@Override
-	public List<BPItems> getInputs() {
+	public List<BPItemInput> getInputs() {
 		return inputs;
 	}
 
 	@Override
-	public List<BPItems> getOutputs() {
-		return output;
+	public List<BPItemOutput> getOutputs() {
+		return null;
 	}
 
 	@Override

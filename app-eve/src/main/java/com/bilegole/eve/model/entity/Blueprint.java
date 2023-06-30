@@ -1,6 +1,7 @@
 package com.bilegole.eve.model.entity;
 
-import com.bilegole.eve.model.entity.Industry.BPItems;
+import com.bilegole.eve.model.entity.Industry.BPItemInput;
+import com.bilegole.eve.model.entity.Industry.BPItemOutput;
 
 import java.util.List;
 
@@ -8,9 +9,9 @@ import java.util.List;
  * 蓝图
  */
 public interface Blueprint {
-	List<BPItems> getInputs();
+	List<BPItemInput> getInputs();
 
-	List<BPItems> getOutputs();
+	List<BPItemOutput> getOutputs();
 
 	Integer getTimeCost();
 
